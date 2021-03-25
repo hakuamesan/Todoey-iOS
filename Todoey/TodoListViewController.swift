@@ -49,6 +49,15 @@ class TodoListViewController: UITableViewController {
     
    
     @IBAction func addButtonPressed(_ sender: UIBarButtonItem) {
+        let alert = UIAlertController(title: "Add New Todoey Item", message: "", preferredStyle: .alert)
+        
+        let action = UIAlertAction(title: "Add Item", style: .default) { (action) in
+            // something happens here when we click
+            print("success!")
+        }
+        
+        alert.addAction(action)
+        present(alert, animated: true, completion: nil)
         
         
     }
